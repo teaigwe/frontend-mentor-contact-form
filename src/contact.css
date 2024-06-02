@@ -1,6 +1,7 @@
 :root{
     --lighter-green: hsl(148, 38%, 91%);
     --medium-green: hsl(169, 82%, 27%);
+    --dark-green: hsl(169, 86%, 14%);
     --red: hsl(0, 66%, 54%);
     --white: hsl(0, 0%, 100%);
     --medium-grey: hsl(186, 15%, 59%);
@@ -24,6 +25,12 @@ input{
     border-width: 1px;
     border-color:  var(--medium-grey);
     border-radius: 7px;
+    
+}
+input:hover{
+    cursor: pointer;
+    border-width: 2px;
+    border-color: var(--medium-green);
 }
 body{
     background-color: var(--lighter-green);
@@ -47,6 +54,7 @@ body{
         height:50px;
         width: 300px;
     }
+
 }
 .email{
     input{
@@ -70,6 +78,7 @@ body{
     align-items: center;
     gap: 10px;
     padding-left: 25px;
+    cursor: pointer;
 
 }
 .message{
@@ -89,4 +98,24 @@ button{
     width: 625px;
     height: 50px;
     color: var(--white);
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--dark-green);
+}
+
+/* Error handling */
+
+.redinput{
+    border-width: 1px;
+    border-color: var(--red);
+    border-radius: 7px;
+    
+}
+.redh4{
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--red); 
 }
