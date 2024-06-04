@@ -22,15 +22,13 @@ h3,p{
     font-style: normal;
 }
 input{
-    border-width: 1px;
-    border-color:  var(--medium-grey);
+    border: 1px solid var(--medium-grey);
     border-radius: 7px;
     
 }
 input:hover{
     cursor: pointer;
-    border-width: 2px;
-    border-color: var(--medium-green);
+    border: 1px solid var(--medium-green);
 }
 body{
     background-color: var(--lighter-green);
@@ -57,10 +55,9 @@ body{
 
 }
 .email{
-    input{
         height:50px;
         width: 620px;
-    }
+    
 }
 
 .gen_sup{
@@ -107,8 +104,7 @@ button:hover{
 /* Error handling */
 
 .redinput{
-    border-width: 1px;
-    border-color: var(--red);
+    border: 1px solid var(--red);
     border-radius: 7px;
     
 }
@@ -118,4 +114,10 @@ button:hover{
     font-weight: 400;
     font-style: normal;
     color: var(--red); 
+}
+.h4{
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
