@@ -16,15 +16,18 @@
         <section class="firstnamesection">
           <h3>First Name *</h4>
           <input type="text" class="firstname"/>
+          <p class="errtxt" data-for="firstname">This field is required</p>
         </section>
         <section >
           <h3>Last Name *</h3>
           <input type="text" class="lastname"/>
+          <p class="errtxt" data-for="lastname">This field is required</p>
         </section>
       </div>
       <div>
         <h3>Email Address *</h3>
         <input type="text"  class="email"/>
+        <p class="errtxt" data-for="email">Please enter a valid email address</p>
       </div>
       <div class="query">
         <section>
@@ -44,15 +47,20 @@
             </div>
           </section>
         </section>
+        <section>
+          <p class="errtxt" data-for="query">Please select a query type</p>
+        </section>
       </div>
       <div class="message">
         <h3>Message *</h3>
         <input type="text" class="msgbox" />
+        <p class="errtxt" data-for="msgbox">This field is required</p>
       </div>
       <div class="consent">
         <input type="checkbox" />
         <p>I consent to being contacted by the team *</p>
-      </div>
+<!--         <p class="errtxt">To submit this form, please consent to being contacted</p>
+ -->      </div>
       <div class="submit">
         <button><h3>Submit</h3></button>
       </div>

@@ -103,21 +103,51 @@ button:hover{
 
 /* Error handling */
 
-.redinput{
+.errbdr{
     border: 1px solid var(--red);
     border-radius: 7px;
     
 }
-.redh4{
+.inputfont{
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+.errtxt{
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     color: var(--red); 
+    display: none;
 }
-.h4{
-    font-family: "Karla", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+
+/* Responsiveness */
+@media screen and (max-width:750px ) {
+ .name{
+    display: grid;
+    input{
+        width: 300px;
+    }
+}   
+.email{
+        width: 300px;
+    
+}
+
+.gen_sup{
+    display: grid;
+}
+.message{
+    input{
+        width: 300px;
+    }
+}
+
+button{
+    width: 315px;
+    height: 50px;
+}
 }
