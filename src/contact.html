@@ -4,45 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contact us</title>
-    <link rel="stylesheet" href="./contact.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="successmsg">
+      <section style="display: flex; gap: 5px;">
+        <img
+          src="/contact-form-main/contact-form-main/assets/images/icon-success-check.svg"
+          alt=""
+        />
+        <h3>Message Sent!</h3>
+      </section>
+      <section>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </section>
+    </div>
     <div class="contactdiv">
       <div><h2>Contact Us</h2></div>
       <div class="name">
         <section class="firstnamesection">
-          <h3>First Name *</h4>
-          <input type="text" class="firstname"/>
+          <h3>First Name <span>*</span></h3>
+          <input type="text" class="firstname" />
           <p class="errtxt" data-for="firstname">This field is required</p>
         </section>
-        <section >
-          <h3>Last Name *</h3>
-          <input type="text" class="lastname"/>
+        <section>
+          <h3>Last Name <span>*</span></h3>
+          <input type="text" class="lastname" />
           <p class="errtxt" data-for="lastname">This field is required</p>
         </section>
       </div>
       <div>
-        <h3>Email Address *</h3>
-        <input type="text"  class="email"/>
-        <p class="errtxt" data-for="email">Please enter a valid email address</p>
+        <h3>Email Address <span>*</span></h3>
+        <input type="email" class="email" />
+        <p class="errtxt" data-for="email">
+          Please enter a valid email address
+        </p>
       </div>
       <div class="query">
         <section>
-          <h3>Query Type *</h3>        
+          <h3>Query Type <span>*</span></h3>
         </section>
         <section class="gen_sup">
           <section>
             <div class="queryinput">
-              <input type="radio" />
-            <h3>General Enquiry</h3>
+              <input type="radio" name="query" value="General" />
+              <h3>General Enquiry</h3>
             </div>
           </section>
           <section>
             <div class="queryinput">
-              <input type="radio" /> 
+              <input type="radio" name="query" value="Support" />
               <h3>Support Request</h3>
             </div>
           </section>
@@ -52,19 +69,24 @@
         </section>
       </div>
       <div class="message">
-        <h3>Message *</h3>
+        <h3>Message <span>*</span></h3>
         <input type="text" class="msgbox" />
         <p class="errtxt" data-for="msgbox">This field is required</p>
       </div>
       <div class="consent">
-        <input type="checkbox" />
-        <p>I consent to being contacted by the team *</p>
-<!--         <p class="errtxt">To submit this form, please consent to being contacted</p>
- -->      </div>
+        <input type="checkbox" id="consentcheck" />
+        <label for="consent"
+          >I consent to being contacted by the team <span>*</span>
+        </label>
+        <p class="errtxt" data-for="checkbox">
+          To submit this form, please consent to being contacted
+        </p>
+      </div>
       <div class="submit">
         <button><h3>Submit</h3></button>
       </div>
     </div>
+ 
     <script src="./contact.js"></script>
   </body>
 </html>
